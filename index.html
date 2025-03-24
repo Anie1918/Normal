@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Profile</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/bandang/IMG_anie mariel.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #403538;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background Overlay to Improve Readability */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+            z-index: -1;
+        }
+
+        header {
+            background-color: rgba(0, 123, 255, 0.8); /* Slightly transparent */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            body {
+                background: #ffffff;
+            }
+            section {
+                margin: 20px 0;
+            }
+        }
+
+        /* Profile Section */
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .profile-section h3 {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            color: #0056b3;
+        }
+
+        /* Info Section */
+        .info-section {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            max-width: 700px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .info-section h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 8px;
+        }
+
+        .info-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .info-section ul li {
+            margin: 8px 0;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #1c15ff;
+            margin: 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Profile</h1>
+    </header>
+
+    <section class="profile-section">
+        <img src="anniee.jpg" alt="Anie Mariel Chavez Quirante" class="profile-image">
+        <h3>Anie Mariel Chavez Quirante</h3>
+    </section>
+
+    <div class="info-section contact-info">
+        <h2>Contact Information</h2>
+        <ul>
+            <li>Mobile No.: 09505779983</li>
+            <li>Email: aniemarielq@gmail.com</li>
+            <li>Address: Sto Niño, Tukuran, Zamboanga Del Sur</li>
+        </ul>
+    </div>
+
+    <div class="info-section personal-info">
+        <h2>Personal Information</h2>
+        <ul>
+            <li>Date of Birth: June 18, 2005</li>
+            <li>Age: 19</li>
+            <li>Place of Birth: Cainglet, Zamboanga Sibugay</li>
+            <li>Height: 5'0"</li>
+            <li>Weight: 45 kg</li>
+            <li>Sex: Female</li>
+            <li>Civil Status: Single</li>
+            <li>Permanent Address: Sto Niño, Tukuran, Zamboanga Del Sur</li>
+            <li>Religion: Iglesia Ni Cristo</li>
+            <li>Father's Name: Anecito Camo Quirante</li>
+            <li>Mother's Maiden Name: Mailyn Largo Chavez</li>
+            <li>Languages/Dialects Spoken: English & Tagalog</li>
+        </ul>
+    </div>
+
+    <div class="info-section education">
+        <h2>Education</h2>
+        <ul>
+            <li>Primary: Central Elementary School (2016-2017)</li>
+            <li>Secondary: Tukuran Technical-Vocational High School (2022-2023)</li>
+            <li>Tertiary: Zamboanga Del Sur Provincial Government College (Undergraduate)</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Anie Mariel Chavez Quirante</p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </footer>
+
+    <script>
+        // Dynamic copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
